@@ -1,0 +1,27 @@
+package Trabalho;
+
+public class Cozinha {
+    private Liquidificador liquidificador;
+    private Geladeira geladeira;
+    private Microondas microondas;
+
+    public Cozinha(Liquidificador liquidificador, Geladeira geladeira, Microondas microondas){
+        this.liquidificador = liquidificador;
+        this.geladeira = geladeira;
+        this.microondas = microondas;
+    }
+
+    public void ligar() {
+        System.out.println("Ligando todos os eletrodomesticos da cozinha.");
+        liquidificador.ligar();
+        geladeira.ligar();
+        microondas.ligar();
+    }
+
+    public void desligar() {
+        System.out.println("Desligando todos os eletrodomesticos da cozinha.");
+        liquidificador.desligar();
+        geladeira.desligar();
+        microondas.desligar();
+    }
+}
