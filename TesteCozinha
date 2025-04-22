@@ -1,0 +1,19 @@
+package Trabalho;
+
+public class TesteCozinha {
+    public static void main(String args[]){
+        Liquidificador liquidificador = new Liquidificador();
+        Geladeira geladeira = new Geladeira();
+        Microondas microondas = new Microondas();
+        Cozinha cozinha = new Cozinha(liquidificador, geladeira, microondas);
+        System.out.println("Antes da cozinha funcionar: ");
+        liquidificador.observar();
+        geladeira.observar();
+        microondas.observar();
+        cozinha.ligar();
+        System.out.println("Depois da cozinha funcionar:");
+        liquidificador.observar();
+        geladeira.observar();
+        microondas.observar();
+    }
+}
